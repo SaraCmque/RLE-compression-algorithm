@@ -47,7 +47,7 @@ std::string comprimirRLE(const std::string& texto) {
 }
 
 
-int main()
+int main(int argc, char* argv[])
 {
     // if file does not have in directory
     // then file foo.txt is created.
