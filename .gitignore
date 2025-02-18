@@ -1,0 +1,8 @@
+# Ignorar archivos objeto (.o)
+*.o
+
+# Ignorar el ejecutable
+/rle
+
+# Ignorar archivos comprimidos generados
+/archivoComprimido.txt
