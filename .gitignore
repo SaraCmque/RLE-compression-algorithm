@@ -5,4 +5,5 @@
 /rle
 
 # Ignorar archivos comprimidos generados
-/archivoComprimido.txt
+*.txt
+*.rle
