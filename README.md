@@ -11,7 +11,11 @@ Example:
 - Output: `A4B3C2D1A2`
 
 This method is useful for compressing data with many consecutive repetitions.
+## Justification for Using RLE
 
+Run-Length Encoding (RLE) was chosen for this project due to its simplicity and efficiency in compressing data with repetitive sequences. Unlike other compression algorithms, RLE does not require complex computations, making it fast and easy to implement. It works particularly well with files that contain long runs of repeated characters, such as text files with repeated spaces, simple images with uniform colors, or structured log files.
+
+Additionally, since RLE is a lossless compression algorithm, it ensures that no data is lost during compression and decompression, which is crucial for maintaining the integrity of the original file. While it may not be the most efficient algorithm for all types of data (e.g., highly random content), its lightweight nature makes it a suitable choice for simple and effective file compression.
 ## Installation
 To compile the program, use the **g++** compiler:
 
@@ -109,6 +113,9 @@ std::string decompressRLE(const std::string& compressedText) {
 ```
  Receiving file type : .txt
 
+## Storage and Retrieval Strategy for Compressed Files
+
+The compressed file is stored with the .rle extension, preserving the original filename. The program reads the file content, applies RLE compression, and writes the result to a new file. When decompressing, the program reads the .rle file, reconstructs the original content, and saves it with its original extension.
  
 
 ## Notes
