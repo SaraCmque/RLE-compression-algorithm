@@ -107,6 +107,9 @@ std::string decompressRLE(const std::string& compressedText) {
     return decompressed;
 }
 ```
+ Receiving file type : .txt
+
+ 
 
 ## Notes
 - Currently, encryption and decryption are not implemented.
